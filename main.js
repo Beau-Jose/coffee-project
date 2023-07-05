@@ -2,8 +2,8 @@
 
 function renderCoffee(coffee) {
     let html = '<div class="coffee">';
-    html += '<div id="name">' + coffee.name + '</div>';
-    html += '<div id="roast">' + coffee.roast + '</div>';
+    html += '<h2 id="name">' + coffee.name + '</h2>';
+    html += '<p id="roast">' + coffee.roast + '</p>';
     html += '</div>';
 
     return html;
