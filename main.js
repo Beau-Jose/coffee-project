@@ -49,6 +49,15 @@ var coffees = [
 ];
 
 var tbody = document.querySelector('#coffees');
+function coffeeDisplay() {
+    for (let i = 0; i < coffees.length; i++){
+        let coffee = coffees[i];
+
+        console.log(coffees)
+    }
+}
+coffeeDisplay();
+
 var submitButton = document.querySelector('#submit');
 var roastSelection = document.querySelector('#roast-selection');
 
