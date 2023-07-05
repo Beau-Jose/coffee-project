@@ -70,9 +70,20 @@ function coffeeDisplay() {
         renderCoffee(coffee)
     }
 }
-const coffeeIdHide = document.getElementById('#id');
 
 coffeeDisplay();
+
+let coffeeName = document.getElementById('coffee-name')
+coffeeName.addEventListener("input",() => {
+    let searchName = coffeeName.value.toLowerCase();
+    let filterData = coffees.filter(function (item){
+        return item.name.toLowerCase().includes(searchName);
+    });
+    filterData.forEach(function (item){
+        let div = document.createElement("div")
+        div.textContent = item.name
+    })
+})
 
 var submitButton = document.querySelector('#submit');
 
