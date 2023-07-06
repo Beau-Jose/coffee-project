@@ -111,8 +111,10 @@ addCoffee.addEventListener('click', () => {
     coffeeDisplay(coffees);
 });
 
+
 roastSelection.addEventListener('change', updateCoffees)
 coffeeName.addEventListener('input', updateCoffees)
+
 
 
 // var submitButton = document.querySelector('#submit');

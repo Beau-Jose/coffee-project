@@ -10,17 +10,25 @@
     <!-- Coffee header -->
 </head>
 <body>
+
+
 <header class="container-fluid ">
     <div class="row">
         <div class="col d-flex justify-content-center">
-            <h1>Astro Coffee!</h1>
+            <!--            <h1 class="mb-4">I CAN FIX THAT COFFEE</h1>-->
+            <div class="myCard  mb-2">
+                <div class="innerCard">
+                    <div class="frontSide">
+                        <h1 class="title">RETRO </h1>
+                    </div>
+                    <div class="backSide">
+                        <h1 class="title">COFFEE</h1>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </header>
-<!-- Coffee header end -->
-<!-- custom line -->
-<div class="jb-line d-flex container-fluid mb-5"></div>
-<!-- end custom line -->
 <!-- container for side by side appearance-->
 <div class="container-fluid">
     <!-- row for side by side appearance-->
@@ -28,8 +36,8 @@
         <!-- coffees text from js -->
         <div class="col-6">
             <div class="container">
-                <div class="row row-cols-2">
-                    <div class="col-6 d-flex justify-content-center">
+                <div class="row ">
+                    <div class="col d-flex flex-wrap justify-content-center">
                         <div id="coffees"></div>
                     </div>
                 </div>
@@ -42,15 +50,15 @@
             <div class="container">
                 <!-- Roast heading -->
                 <div class="row d-flex justify-content-end ">
-                    <div class="col d-flex justify-content-center mb-5">
-                        <span class="">Roast</span>
+                    <div class="col d-flex justify-content-center mb-2">
+                        <span class="">Select A Roast</span>
                     </div>
                 </div>
                 <!-- end of Roast heading -->
                 <!-- menu items for roast selection -->
                 <div class="row d-flex justify-content-end">
-                    <div class="col d-flex justify-content-end mb-5">
-                        <select id="roast-selection" class="jb-roast-button container-fluid mb-5">
+                    <div class="col d-flex justify-content-end ">
+                        <select id="roast-selection" class="jb-roast-button container-fluid mb-1">
                             <option value="All" selected>All</option>
                             <option value="light">Light</option>
                             <option value="medium">Medium</option>
@@ -61,14 +69,14 @@
                 <!-- end of menu items for roast selection -->
                 <!-- User Coffee input-->
                 <div class="row d-flex justify-content-end">
-                    <div class="col d-flex justify-content-start mb-5">
+                    <div class="col d-flex justify-content-start mb-1">
                         <!--                       start of 1st coffee name input >-->
                         <form action="" class="jb-container">
                             <div class="input-container">
                                 <div class="input-content">
                                     <div class="input-dist">
                                         <div class="input-type">
-                                            <input placeholder="Enter coffee name here!" type="text" class="input-is"
+                                            <input placeholder="Enter an existing coffee!" type="text" class="input-is"
                                                    id="coffee-name">
                                         </div>
                                     </div>
@@ -84,8 +92,8 @@
             <!-- beginning of 'add a coffee header -->
             <div class="container">
                 <div class="row">
-                    <div class="col">
-                        <h1>Add A Coffee</h1>
+                    <div class="col d-flex justify-content-center mb-2">
+                        <h1 class="jd-h1">Add A Coffee</h1>
                     </div>
                 </div>
             </div>
@@ -93,14 +101,14 @@
             <!-- Roast heading -->
             <div class="row d-flex justify-content-end ">
                 <div class="col d-flex justify-content-center">
-                    <span class="mb-5">Roast</span>
+                    <span class="mb-3">Select A Roast</span>
                 </div>
             </div>
             <!-- end of Roast heading -->
             <!-- menu items for roast selection -->
             <div class="row d-flex justify-content-end">
-                <div class="col d-flex justify-content-end mb-5 ">
-                    <select id="roast-selection-add" class="jb-roast-button container-fluid mb-2 jb-popover">
+                <div class="col d-flex justify-content-end ">
+                    <select id="roast-selection-add" class="jb-roast-button container-fluid ">
                         <option value="light" selected>Light</option>
                         <option value="medium">Medium</option>
                         <option value="dark">Dark</option>
@@ -110,14 +118,14 @@
             <!-- end of menu items for roast selection -->
             <!-- Coffee Name heading -->
             <div class="row d-flex justify-content-end">
-                <div class="col d-flex justify-content-start mb-5">
+                <div class="col d-flex justify-content-start mb-1">
                     <!--                       start of 1st coffee name input >-->
                     <form action="" class="jb-container">
                         <div class="input-container">
                             <div class="input-content">
                                 <div class="input-dist">
                                     <div class="input-type">
-                                        <input placeholder="Enter coffee name here!" type="text" class="input-is"
+                                        <input placeholder="Enter a coffee you want added! " type="text" class="input-is"
                                                id="coffee-name-add">
                                     </div>
                                 </div>
