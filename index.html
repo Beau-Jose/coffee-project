@@ -13,7 +13,7 @@
 <header class="container-fluid ">
     <div class="row">
         <div class="col d-flex justify-content-center">
-            <h1>Coffee!</h1>
+            <h1>Astro Coffee!</h1>
         </div>
     </div>
 </header>
@@ -69,10 +69,22 @@
                 <!-- User Coffee input-->
                 <div class="row d-flex justify-content-end">
                     <div class="col d-flex justify-content-start">
-                        <input id="coffee-name" type="text" placeholder="Enter coffee name here!">
+                        <!--                       start of 1st coffee name input >-->
+                        <form action="" class="jb-container">
+                            <div class="input-container">
+                                <div class="input-content">
+                                    <div class="input-dist">
+                                        <div class="input-type">
+                                            <input placeholder="Enter coffee name here!" type="text" class="input-is"
+                                                   id="coffee-name">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
-                <!--end of User Coffee input-->
+                <!--end of 1st Coffee name input-->
             </div>
 
             <!-- Line -->
@@ -98,11 +110,20 @@
             <!-- menu items for roast selection -->
             <div class="row d-flex justify-content-end">
                 <div class="col d-flex justify-content-end">
-                    <select id="roast-selection-add" class="jb-roast-button container-fluid mb-2">
-                        <option value="light"  selected>Light</option>
-                        <option value="medium">Medium</option>
-                        <option value="dark">Dark</option>
-                    </select>
+<!--                    <select id="roast-selection-add" class="jb-roast-button container-fluid mb-2">-->
+<!--                        <option value="light" selected>Light</option>-->
+<!--                        <option value="medium">Medium</option>-->
+<!--                        <option value="dark">Dark</option>-->
+<!--                    </select>-->
+                    <ul class="main-nav jb-roast-button" id="roast-selection-add">
+                        <li>Roast Selection
+                            <ul class="drop-down">
+                                <li value="light">Light</li>
+                                <li value="medium">Medium</li>
+                                <li value="dark">Dark</li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
             </div>
             <!-- end of menu items for roast selection -->
@@ -112,18 +133,37 @@
                     <p>Coffee Name</p>
                 </div>
             </div>
-            <!-- end of Coffee Name heading -->
-            <!-- User Coffee input-->
             <div class="row d-flex justify-content-end">
                 <div class="col d-flex justify-content-start">
-                    <input id="coffee-name-add" type="text" placeholder="Enter coffee name here!">
+                    <!--                       start of 1st coffee name input >-->
+                    <form action="" class="jb-container">
+                        <div class="input-container">
+                            <div class="input-content">
+                                <div class="input-dist">
+                                    <div class="input-type">
+                                        <input placeholder="Enter coffee name here!" type="text" class="input-is"
+                                               id="coffee-name-add">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
             <!--end of User Coffee input-->
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <button type="submit" id="BTN">Submit</button>
+                        <button class="jb-btn" type="button" id="BTN">
+                            <strong>SUBMIT</strong>
+                            <div id="container-stars">
+                                <div id="stars"></div>
+                            </div>
+                            <div id="glow">
+                                <div class="jb-circle"></div>
+                                <div class="jb-circle"></div>
+                            </div>
+                        </button>
                     </div>
                 </div>
             </div>
