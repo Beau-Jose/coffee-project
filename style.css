@@ -5,6 +5,37 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+div .coffee{
+    margin-bottom: 80px;
+}
+h2 {
+    border: 50px;
+    padding: 10px;
+    opacity: 0.6;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #CD1818;
+    box-shadow:
+            0 0 15px 7px #fff,  /* inner white */
+            0 0 25px 15px #f0f, /* middle magenta */
+            0 0 30px 20px #0ff; /* outer cyan */
+    font-weight: bold;
+    color: white;
+}
+
+p {
+
+    opacity: 0.6;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #9336B4;
+    box-shadow:
+            0 0 15px 7px #fff,  /* inner white */
+            0 0 25px 15px #f0f, /* middle magenta */
+            0 0 30px 20px #0ff; /* outer cyan */
+    font-weight: bold;
+    color: white;
+}
 table {
     border-collapse: collapse;
     margin: 15px 0;
