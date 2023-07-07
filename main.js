@@ -8,17 +8,6 @@ function renderCoffee(coffee) {
 
     return html;
 }
-
-
-function renderCoffees(coffees) {
-    let html = '';
-    for (let i = 0; i < coffees.length; i++) {
-        html += renderCoffee(coffees[i]);
-    }
-    return html;
-}
-
-
 // from http://www.ncausa.org/About-Coffee/Coffee-Roasts-Guide
 let coffees = [
     {id: 1, name: 'Light City', roast: 'light'},
@@ -36,6 +25,24 @@ let coffees = [
     {id: 13, name: 'Italian', roast: 'dark'},
     {id: 14, name: 'French', roast: 'dark'},
 ];
+// local storage code
+//
+// (() => {
+//     let localStorageItem = localStorage.getItem("storedCoffee");
+//     if(localStorageItem){
+//         coffees.push(JSON.parse(localStorageItem));
+//     }
+// })()
+
+function renderCoffees(coffees) {
+    let html = '';
+    for (let i = 0; i < coffees.length; i++) {
+        html += renderCoffee(coffees[i]);
+    }
+    return html;
+}
+
+
 
 let tbody = document.querySelector('#coffees');
 
@@ -60,6 +67,9 @@ function updateCoffees() {
     let searchInput = coffeeName.value;
 
     let filteredCoffees = coffees;
+        // // local storage code
+        // let coffeeJSON = JSON.stringify(filteredCoffees);
+        //     localStorage.setItem('storedCoffee', coffeeJSON);
 
     if (selectedRoast !== 'all') {
         filteredCoffees = filteredCoffees.filter(function (coffee) {
@@ -77,6 +87,7 @@ function updateCoffees() {
         `
     } else {
         tbody.innerHTML = renderCoffees(filteredCoffees);
+
     }
 }
 
